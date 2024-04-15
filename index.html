@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo">Portfolio.</a>
+    <nav class="navbar">
+        
+        <a href="#home" style="--i:1;" class="active" onclick="showHomeinfo()">Home</a>
+        <script>
+            function showHomeinfo( ){
+                alert("Welcome to my portfolio website!")
+              var aboutinfo = document.getElementById("aboutinfo");
+              if (aboutinfo) {
+
+              aboutinfo.innerText = "About me: I am a web developer passionate about creating innvotative solution.";
+            }
+        }
+        </script>
+            
+        
+
+        <a href="#about" style="--i:2;" onclick="toggleAbout()">About</a>
+       
+        <a href="#services" style="--i:3;">Skills</a>
+        <a href="#portfolio" style="--i:4;">Portfolio</a>
+        <a href="#contact" style="--i:5;">Contact</a>
+    </nav>
+   </header>
+   <section class="Home">
+    <div class="home-sci">
+        <a href="https://www.facebook.com/profile.php?id=100033156140018"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://twitter.com/rajbabu_sa94193"><i class='bx bxl-twitter' ></i></a>
+                <a href="linkedin.com/in/rajbabu-k-sah-691131303"><i class='bx bxl-linkedin' ></i></box-icon></a>
+            
+        </a>
+    </div>
+    <div class="home-content">
+        <h1>Hi, I'm Razz Sha </h1>
+        <h3>Frontend Devloper</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium ex molestias ipsa saepe quia blanditiis necessitatibus consectetur, rerum excepturi amet? Hic minima sint excepturi ea veniam harum nisi incidunt!</p>
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="bttn">Download CV</a>
+    </div>
+    
+    <div class="home-img">
+        <div class="glowing-circle">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <div class="image">
+                <img src="home.png" alt="">
+            </div>
+
+        </div>
+    </div>
+   </section>
+</body>
+</html>
